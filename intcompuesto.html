@@ -4,142 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/estiloprincipal.css">
-    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="estiloprincipal.css">
+    <link rel="stylesheet" href="menu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <title>Interés compuesto</title>
 </head>
 
 <body class="holy-grail">
-    <div class="container-fluid">
-        <div class="row">
-            <header class="col-12">
-                <p>Header</p>
-            </header>
-        
-            <div class="col-12">
-                <!-- inicio de menu -->
-                <nav>
-                    <div class="wrapper">
-                        <div class="logo"><span>Desarrollo</span>Software 4</div>
-                        <input type="radio" name="slider" id="menu-btn">
-                        <input type="radio" name="slider" id="close-btn">
-                        <ul class="nav-links">
-                            <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
-                            <li><a href="/inicio.html">Inicio</li>
-                            <li><a href="/intsimple.html">Interés simple</li>
-                            <li><a href="/intcompuesto.html">Interés compuesto</a></li>
-                            <li><a href="/anualidad.html">Anualidades Ordinarias</a></li>
-                        </ul>
-                        <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
-                    </div>
-                </nav>
-                <!-- fin de menu -->
-        
-                <div class="col-md-12">
-                    <p>
-                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                            Calcular Monto Compuesto
-                        </a>
-                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#montoCompuesto2" aria-expanded="false" aria-controls="collapseExample">
-                            Calcular Monto Compuesto 2
-                        </button>
-                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#interesCompuesto" aria-expanded="false" aria-controls="collapseExample">
-                            Calcular Interes Compuesto
-                        </button>
-                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#capitalCompuesto" aria-expanded="false" aria-controls="collapseExample">
-                            Calcular Capital Compuesto 
-                        </button>
-                    </p>
-                    <div class="collapse" id="collapseExample">
-                        <div class="card card-body">
-                        <form action="">
-                            <div class="row mb-3">
-                                <label for="inputEmail3" class="col-sm-2 col-form-label">Capital</label>
-                                <div class="col-sm-10">
-                                  <input type="number" class="form-control" id="inputEmail3">
-                                </div>
-                            </div>
-                            <div class="row mb-3">
-                                <label for="inputEmail3" class="col-sm-2 col-form-label">Tasa de interes</label>
-                                <div class="col-sm-10">
-                                  <input type="number" class="form-control" id="inputEmail3">
-                                </div>
-                            </div>
-                            <div class="row mb-3">
-                                <label for="inputEmail3" class="col-sm-2 col-form-label">Número de Periodos</label>
-                                <div class="col-sm-10">
-                                  <input type="number" class="form-control" id="inputEmail3">
-                                </div>
-                            </div>
-                        </form>
-                        </div>
-                    </div>
-                    <div class="collapse" id="montoCompuesto2">
-                        <div class="card card-body">
-                            <div class="row mb-3">
-                                <label for="inputEmail3" class="col-sm-2 col-form-label">Capital</label>
-                                <div class="col-sm-10">
-                                  <input type="number" class="form-control" id="inputEmail3">
-                                </div>
-                              </div>
-                              <div class="row mb-3">
-                                <label for="inputEmail3" class="col-sm-2 col-form-label">Interes</label>
-                                <div class="col-sm-10">
-                                  <input type="number" class="form-control" id="inputEmail3">
-                                </div>
-                              </div>
-                        </div>
-                    </div>
-                    <div class="collapse" id="interesCompuesto">
-                        <div class="card card-body">
-                            <div class="row mb-3">
-                                <label for="inputEmail3" class="col-sm-2 col-form-label">Capital</label>
-                                <div class="col-sm-10">
-                                  <input type="number" class="form-control" id="inputEmail3">
-                                </div>
-                              </div>
-                              <div class="row mb-3">
-                                <label for="inputEmail3" class="col-sm-2 col-form-label">Monto</label>
-                                <div class="col-sm-10">
-                                  <input type="number" class="form-control" id="inputEmail3">
-                                </div>
-                              </div>
-                        </div>
-                    </div>
-                    <div class="collapse" id="capitalCompuesto">
-                        <div class="card card-body">
-                            <div class="row mb-3">
-                                <label for="inputEmail3" class="col-sm-2 col-form-label">Monto</label>
-                                <div class="col-sm-10">
-                                  <input type="number" class="form-control" id="inputEmail3">
-                                </div>
-                              </div>
-                              <div class="row mb-3">
-                                <label for="inputEmail3" class="col-sm-2 col-form-label">Tasas de Interes</label>
-                                <div class="col-sm-10">
-                                  <input type="number" class="form-control" id="inputEmail3">
-                                </div>
-                              </div>
-                              <div class="row mb-3">
-                                <label for="inputEmail3" class="col-sm-2 col-form-label">Numero de periodos</label>
-                                <div class="col-sm-10">
-                                  <input type="number" class="form-control" id="inputEmail3">
-                                </div>
-                              </div>
-                        </div>
-                    </div>
-                </div>
-    
-        
-            <footer class="col-md-12">
-                <p>Footer</p>
-            </footer>
+
+    <header>
+        <p>Header</p>
+    </header>
+
+    <div class="holy-grail-body">
+        <!-- inicio de menu -->
+        <nav>
+            <div class="wrapper">
+                <div class="logo"><span>Desarrollo</span>Software 4</div>
+                <input type="radio" name="slider" id="menu-btn">
+                <input type="radio" name="slider" id="close-btn">
+                <ul class="nav-links">
+                    <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                    <li><a href="/inicio.html">Inicio</li>
+                    <li><a href="/intsimple.html">Interés simple</li>
+                    <li><a href="/intcompuesto.html">Interés compuesto</a></li>
+                    <li><a href="/anualidad.html">Anualidades Ordinarias</a></li>
+                </ul>
+                <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+            </div>
+        </nav>
+        <!-- fin de menu -->
+
+        <section class="holy-grail-content">
+            <p>Main Content</p>
+        </section>
+
+        <div class="holy-grail-sidebar-1 hg-sidebar">
+            <p>Sidebar 1</p>
+        </div>
+
+        <div class="holy-grail-sidebar-2 hg-sidebar">
+            <p>Sidebar 2</p>
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <footer>
+        <p>Footer</p>
+    </footer>
 </body>
 
 </html>

@@ -4,29 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/estiloprincipal.css">
-    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="estiloprincipal.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="banner.css">
+    <link rel="stylesheet" href="botones.css">
+    <link rel="shortcut icon" href="imagenes/icons8-banco-64.png" type="image/x-icon">
+    <!--CSS y JS de Bootstrap -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
     <title>Inicio</title>
 </head>
 
 <body class="holy-grail">
 
     <header>
-        <p>Calculadoras financiera</p>
-    </header>
-
-    <div class="holy-grail-body">
         <!-- inicio de menu -->
         <nav>
             <div class="wrapper">
-                <div class="logo"><span>Desarrollo</span>Software 4</div>
+                <div class="logo"><span>Code</span>Bank</div>
                 <input type="radio" name="slider" id="menu-btn">
                 <input type="radio" name="slider" id="close-btn">
                 <ul class="nav-links">
                     <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
-                    <li><a href="/inicio.html">Inicio</li>
-                    <li><a href="/intsimple.html">Interés simple</li>
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="/intsimple.html">Interés simple</a></li>
                     <li><a href="/intcompuesto.html">Interés compuesto</a></li>
                     <li><a href="/anualidad.html">Anualidades Ordinarias</a></li>
                 </ul>
@@ -34,24 +40,88 @@
             </div>
         </nav>
         <!-- fin de menu -->
+    </header>
+
+    <div class="holy-grail-body">
 
         <section class="holy-grail-content">
-            <p>Main Content</p>
+
+            <!--img src="mainbanner.png" class="img-fluid" alt="..."-->
+            <!-- inicio del carrusel -->
+            <div class="slider">
+                <ul>
+                    <li>
+                        <img src="mainbanner.png" alt="300" width="700">
+                    </li>
+                    <li>
+                        <img src="imagenes/carrusel1.jpg" alt="300" width="700">
+                    </li>
+                    <li>
+                        <img src="imagenes/carrusel2.jpg" alt="300" width="700">
+                    </li>
+                    <li>
+                        <img src="imagenes/carrusel4.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+            <!-- fin del carrusel -->
+            <div class="container text-center" id="tarjeta"><!-- Inicia columna -->
+                <h4 class="card-title">Siempre hay alguien que te da la mano</h4><!-- Titulo del Card -->
+                <hr>
+                <h5 class="card-text mb-3">Tenemos la solución perfecta para tus necesidades. Selecciona lo que buscas:
+                </h5>
+                <br>
+                <!--texto -->
+                <div class="col-12">
+                    <div class="col-4">
+                        <a href="intsimple.html" class="boton azul">
+                            <img src="imagenes/icons8-calculadora-96.png" class="d-block" alt="58" width="58">
+                            <h5>Calcular Interés Simple</h5>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="intcompuesto.html" class="boton azul">
+                            <img src="imagenes/imag2.png" class="d-block" alt="58" width="58">
+                            <h5>Calcular Interés compuesto</h5>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="anualidad.html" class="boton azul">
+                            <img src="imagenes/imag3.png" class="d-block" alt="58" width="58">
+                            <h5>Calcular Interés ordinario</h5>
+                        </a>
+                    </div>
+                </div>
         </section>
 
-        <div class="holy-grail-sidebar-1 hg-sidebar">
-            <p>Sidebar 1</p>
+        <div class="holy-grail-sidebar-1 hg-sidebar" >
+            <br>
+            <h4 style="color: rgba(48, 47, 47, 0.918);">Misión</h4>
+            <hr>
+            <p style="text-align: justify; color: rgba(48, 47, 47, 0.918);">Nuestra misión es ofrecer a nuestros clientes una plataforma bancaria en
+                línea confiable y segura, que les brinde acceso a
+                herramientas financieras indispensables, como calculadoras de interés simple, compuesto y ordinario. Nos
+                esforzamos por simplificar y agilizar los procesos bancarios, empoderando a nuestros clientes para que
+                tomen decisiones informadas sobre sus inversiones y préstamos.</p>
         </div>
 
         <div class="holy-grail-sidebar-2 hg-sidebar">
-            <p>Sidebar 2</p>
+            <br>
+            <h4 style="color: rgb(48, 47, 47);">visión</h4>
+            <hr>
+            <p style="text-align: justify; color: rgba(48, 47, 47, 0.918);">Nuestra visión es convertirnos en el banco en línea líder en la provisión de
+                calculadoras de interés simple, compuesto y ordinario, siendo reconocidos por la precisión y facilidad
+                de uso de nuestras herramientas financieras. A través de una atención al cliente excepcional y una
+                plataforma virtual innovadora, aspiramos a ser la elección preferida de aquellos que buscan optimizar
+                sus finanzas personales y empresariales.</p>
         </div>
-
     </div>
 
     <footer>
-        <p>Footer</p>
+        <p>&copy; 2023 CodeBank. Todos los derechos reservados.</p>
     </footer>
+
+
 </body>
 
 </html>
